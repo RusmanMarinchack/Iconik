@@ -1,0 +1,230 @@
+.plans {
+    background: rgba(45, 45, 46, 1);
+    padding: 50px 0;
+
+    @media screen and (min-width: $tabel) {
+        background: url('../images/plans-bg.jpg') no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    @media screen and (min-width: $tabel) {
+        padding: 160px 0;
+    }
+
+    // .plans__container
+
+    &__container {
+        max-width: 100%;
+    }
+
+    // .plans__title
+
+    &__title {
+        margin-bottom: 64px;
+    }
+
+    // .plans__wrapper
+
+    &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        @media screen and (min-width: $minMack) {
+            
+            flex-wrap: nowrap;
+        }
+    }
+
+    // .plans__item
+
+    &__item {
+    }
+}
+
+.plans-item {
+    width: 100%;
+    background: rgba(27, 27, 27, 1);
+    margin-bottom: 10px;
+
+    @media screen and (min-width: $minTabel) {
+        width: calc(50% - 5px);
+    }
+
+    @media screen and (min-width: $minMack) {
+        margin-bottom: 0;
+    }
+
+    &:not(:last-child) {
+        margin-right: 0px;
+
+        @media screen and (min-width: $minMack) {
+            margin-right: 20px;
+        }
+    }
+
+    &:nth-child(2n + 1) {
+
+        @media screen and (min-width: $minTabel) {
+            margin-right: 10px;
+        }
+
+        @media screen and (min-width: $minMack) {
+            margin-right: 20px;
+        }
+    }
+
+    &.while-bg {
+        background: #fff;
+        color: #000;
+    }
+
+    // .plans-item__box-img
+
+    &__box-img {
+        display: none;
+
+        @media screen and (min-width: $tabel) {
+            display: block;
+        }
+
+        & img {
+            width: 100%;
+        }
+    }
+
+    // .plans-item__title
+
+    &__title {
+        margin-top: 30px;
+        text-transform: uppercase;
+        text-align: center;
+
+        @media screen and (min-width: $minTabel) {
+            margin-top: 40px;
+        }
+    }
+
+    // .plans-item__inner
+
+    &__inner {
+        padding: 20px 20px 0 20px;
+
+        @media screen and (min-width: $minTabel) {
+            padding: 20px;
+        }
+
+        @media screen and (min-width: $mack) {
+            padding: 40px;
+        }
+    }
+
+    // .plans-item__list
+
+    &__list {
+        list-style: none;
+
+        &.hidden {
+            height: 0;
+            overflow: hidden;
+            transition: all 0.4s;
+
+            @media screen and (min-width: $minTabel) {
+                height: auto;
+            }
+        }
+    }
+
+    &__go-info {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        text-align: start;
+        padding: 18px 10px;
+        border: none;
+        border-top: 1px solid rgba(97, 93, 109, 1);
+        color:  rgba(97, 93, 109, 1);
+        background: transparent;
+
+        @media screen and (min-width: $minTabel) {
+            display: none;
+        }
+
+        &.active {
+
+            & span::before {
+                transform: rotate(0deg);
+            }
+        }
+
+        & span {
+            display: block;
+            width: 16px;
+            height: 1px;
+            position: relative;
+            margin-right: 10px;
+            background: rgba(97, 93, 109, 1);
+
+            &::before {
+                content: '';
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 16px;
+                height: 1px;
+                background: rgba(97, 93, 109, 1);
+                transform: rotate(-90deg);
+                transition: all 0.4s;
+            }
+        }
+    }
+
+    // .plans-item__item
+
+    &__item {
+        display: flex;
+        align-items: flex-start;
+        line-height: 24px;
+        margin-bottom: 10px;
+
+        @media screen and (min-width: $minTabel) {
+            margin-bottom: 15px;
+        }
+        
+        &::before {
+            content: '	\2713';
+            display: block;
+            color: rgba(139, 50, 254, 1);
+            margin-right: 13px;
+        }
+
+        &.done {
+            color: rgba(97, 93, 109, 0.5);
+
+            &::before {
+                color: rgba(97, 93, 109, 0.5);
+            }
+        }
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 54px;
+        text-decoration: none;
+        outline: solid 0px #8B32FE;
+        color: #fff;
+        transition: all 0.3s;
+
+        @media screen and (min-width: $minTabel)  {
+            height: 64px;
+        }
+
+        &:hover {
+            background: #7409ff;
+        }
+    }
+}

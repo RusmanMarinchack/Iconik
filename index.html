@@ -1,0 +1,1278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description">
+    <meta name="keywords">
+    <meta name="robots">
+    <title>Iconik</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./css/lightgallery.css">
+    <link rel="stylesheet" href="./css/lg-thumbnail.css">
+    <link rel="stylesheet" href="./css/lg-zoom.css">
+    <link rel="stylesheet" href="./css/lightgallery-bundle.min.css">
+</head>
+<body>
+    
+    <header class="header">
+        <div class="header__constainer _container">
+            <div class="header__logo">
+                <a href="./index.html">
+                    <img src="./images/svg/logo.svg" alt="Logo">
+                </a>
+            </div>
+
+            <div class="header__inner">
+                <nav class="header__nav nav">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#" class="nav__link active-page">HOME</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">SERVICES</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">ABOUT</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">GALLERY</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">CONTACTS</a></li>
+                    </ul>
+                </nav>
+
+                <button class="melody">
+                    <svg>
+                        <use xlink:href="./images/svg/sprite.svg#melody"/>
+                    </svg>
+                </button>
+
+                <div class="header__wrap">
+                    <div class="header__btns">
+                        <a href="#consultation" class="header__btn _btn-purple btn-scroll" data-id="consultation">Get a consultation</a>
+                    </div>
+                    <div class="header__lenguage lenguage select">
+                        <div class="lenguage__active select-active">
+                            <span class="lenguage__label">Eng</span>
+                            <svg class="icon">
+                                <use xlink:href="./images/svg/sprite.svg#btn-bottom"/>
+                            </svg>
+                        </div>
+                        <div class="lenguage__list select-list">
+                            <div class="lenguage__item select-item">
+                                <a href="#" class="lenguage__link">Укр</a>
+                            </div>
+                            <div class="lenguage__item">
+                                <a href="#" class="lenguage__link">Укр</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header__burger">
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="main__home home">
+            <div class="home__container _container">
+                <div class="home__wrapper">
+                    <h1 class="home__title _title-1">
+                        LIFE IS SHORT, TREAT YOURSELF
+                    </h1>
+                    <div class="home__box-btn">
+                            <button class="home__btn-video">
+                            <svg>
+                                <use xlink:href="./images/svg/sprite.svg#paligon"/>
+                            </svg>
+                        </button>
+                        <span>Discover for a 30 seconds</span>
+                    </div>
+                </div>
+                <div class="box-melody">
+                    <button class="melody">
+                        <svg>
+                            <use xlink:href="./images/svg/sprite.svg#melody"/>
+                        </svg>
+                    </button>
+                    <audio id="audio" controls src=""></audio>
+                </div>
+                
+            </div>
+        </section>
+        <section class="main__services services">
+            <div class="services__container _container">
+                <h2 class="services__title _title-2">popular services</h2>
+                <div class="services__wrapper">
+                    <div class="services__tabs tabs">
+                        <div class="tabs__header tabs-header">
+                            <button class="tabs-header__btn active-tab" data-tab="1">All services</button>
+                            <button class="tabs-header__btn" data-tab="2">DINE</button>
+                            <button class="tabs-header__btn" data-tab="3">RIDE</button>
+                            <button class="tabs-header__btn" data-tab="4">DISCOVER</button>
+                            <button class="tabs-header__btn" data-tab="5">RELAX</button>
+                            <button class="tabs-header__btn" data-tab="6">EXPERIENCE</button>
+                        </div>
+                        <div class="tabs__header tabs-header mob">
+                            <div class="tabs-header__current">
+                                <span></span>
+                                <svg class="icon">
+                                    <use xlink:href="./images/svg/sprite.svg#btn-bottom"/>
+                                </svg>
+                            </div>
+                            <div class="tabs-header__opcions">
+                                <button class="tabs-header__btn active-tab" data-tab="1">All services</button>
+                                <button class="tabs-header__btn" data-tab="2">DINE</button>
+                                <button class="tabs-header__btn" data-tab="3">RIDE</button>
+                                <button class="tabs-header__btn" data-tab="4">DISCOVER</button>
+                                <button class="tabs-header__btn" data-tab="5">RELAX</button>
+                                <button class="tabs-header__btn" data-tab="6">EXPERIENCE</button>
+                            </div>
+                        </div>
+                        <div class="tabs__body tabs-body-1 active-tab-body">
+                            <!-- Slider main container -->
+                            <div class="tabs__swiper swiper">
+                                <!-- Additional required wrapper -->
+                                <div class="tabs__swiper-wrapper swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="tabs__swiper-slide swiper-slide tabs-slide">
+                                    <a href="#" class="tabs-slide__box-img">
+                                        <img src="./images/uptown-luxury-cars.jpg" alt="UPTOWN LUXURY CARS">
+                                        <button class="tabs-slide__btn-more _btn-purple ">Tabs-slide</button>                                    
+                                    </a>
+                                    <div class="tabs-slide__discription">
+                                        <a href="#" class="tabs-slide__title">RENT A FERRARI F8 WITH EXCLUSIVE PRICING FROM UPTOWN LUXURY CARS</a>
+                                        <div class="tabs-slide__inner">
+                                            <div class="tabs-slide__prices">
+                                                <div class="tabs-slide__new _new">USD <span>2,000.00</span></div>
+                                                <div class="tabs-slide__old _old">USD <span>4,000.00</span></div>
+                                            </div>
+                                            <div class="tabs-slide__time">
+                                                <svg>
+                                                    <use xlink:href="./images/svg/sprite.svg#time"/>
+                                                </svg>
+                                                <span>1 h</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tabs__swiper-slide swiper-slide tabs-slide">
+                                    <a href="#" class="tabs-slide__box-img">
+                                        <img src="./images/burj-club.jpg" alt="burj club">
+                                        <button class="tabs-slide__btn-more _btn-purple ">Tabs-slide</button>                                    
+                                    </a>
+                                    <div class="tabs-slide__discription">
+                                        <a href="#" class="tabs-slide__title">BRUNCH WITH POOL ACCESS AT ROOFTOP, THE BURJ CLUB</a>
+                                        <div class="tabs-slide__inner">
+                                            <div class="tabs-slide__prices">
+                                                <div class="tabs-slide__new _new">USD <span>2,000.00</span></div>
+                                                <div class="tabs-slide__old _old">USD <span>4,000.00</span></div>
+                                            </div>
+                                            <div class="tabs-slide__time">
+                                                <svg>
+                                                    <use xlink:href="./images/svg/sprite.svg#time"/>
+                                                </svg>
+                                                <span>1 h</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tabs__swiper-slide swiper-slide tabs-slide">
+                                    <a href="#" class="tabs-slide__box-img">
+                                        <img src="./images/live-the-billionaire.jpg" alt="LIVE THE BILLIONAIRE">
+                                        <button class="tabs-slide__btn-more _btn-purple ">Tabs-slide</button>                                    
+                                    </a>
+                                    <div class="tabs-slide__discription">
+                                        <a href="#" class="tabs-slide__title">LIVE THE BILLIONAIRE LIFE FOR A DAY IN DUBAI</a>
+                                        <div class="tabs-slide__inner">
+                                            <div class="tabs-slide__prices">
+                                                <div class="tabs-slide__new _new">USD <span>2,000.00</span></div>
+                                                <div class="tabs-slide__old _old">USD <span>4,000.00</span></div>
+                                            </div>
+                                            <div class="tabs-slide__time">
+                                                <svg>
+                                                    <use xlink:href="./images/svg/sprite.svg#time"/>
+                                                </svg>
+                                                <span>1 h</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tabs__swiper-slide swiper-slide tabs-slide">
+                                    <a href="#" class="tabs-slide__box-img">
+                                        <img src="./images/friday-brunch.jpg" alt="FRIDAY BRUNCH">
+                                        <button class="tabs-slide__btn-more _btn-purple ">Tabs-slide</button>                                    
+                                    </a>
+                                    <div class="tabs-slide__discription">
+                                        <a href="#" class="tabs-slide__title">FRIDAY BRUNCH AT FRANGIPANI ON ZAYA NURAI ISLAND, ABU DHABI</a>
+                                        <div class="tabs-slide__inner">
+                                            <div class="tabs-slide__prices">
+                                                <div class="tabs-slide__new _new">USD <span>2,000.00</span></div>
+                                                <div class="tabs-slide__old _old">USD <span>4,000.00</span></div>
+                                            </div>
+                                            <div class="tabs-slide__time">
+                                                <svg>
+                                                    <use xlink:href="./images/svg/sprite.svg#time"/>
+                                                </svg>
+                                                <span>1 h</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tabs__swiper-slide swiper-slide tabs-slide">
+                                    <a href="#" class="tabs-slide__box-img">
+                                        <img src="./images/flyboard.jpg" alt="Flyboard">
+                                        <button class="tabs-slide__btn-more _btn-purple ">Tabs-slide</button>                                    
+                                    </a>
+                                    <div class="tabs-slide__discription">
+                                        <a href="#" class="tabs-slide__title">Flyboard in Dubai marina</a>
+                                        <div class="tabs-slide__inner">
+                                            <div class="tabs-slide__prices">
+                                                <div class="tabs-slide__new _new">USD <span>2,000.00</span></div>
+                                                <div class="tabs-slide__old _old">USD <span>4,000.00</span></div>
+                                            </div>
+                                            <div class="tabs-slide__time">
+                                                <svg>
+                                                    <use xlink:href="./images/svg/sprite.svg#time"/>
+                                                </svg>
+                                                <span>1 h</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tabs__swiper-slide swiper-slide tabs-slide">
+                                    <a href="#" class="tabs-slide__box-img">
+                                        <img src="./images/uptown-luxury-cars.jpg" alt="UPTOWN LUXURY CARS">
+                                        <button class="tabs-slide__btn-more _btn-purple ">Tabs-slide</button>                                    
+                                    </a>
+                                    <div class="tabs-slide__discription">
+                                        <a href="#" class="tabs-slide__title">RENT A FERRARI F8 WITH EXCLUSIVE PRICING FROM UPTOWN LUXURY CARS</a>
+                                        <div class="tabs-slide__inner">
+                                            <div class="tabs-slide__prices">
+                                                <div class="tabs-slide__new _new">USD <span>2,000.00</span></div>
+                                                <div class="tabs-slide__old _old">USD <span>4,000.00</span></div>
+                                            </div>
+                                            <div class="tabs-slide__time">
+                                                <svg>
+                                                    <use xlink:href="./images/svg/sprite.svg#time"/>
+                                                </svg>
+                                                <span>1 h</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                                <!-- If we need navigation buttons -->
+                                <div class="tabs__swiper-button-prev swiper-button-prev">
+                                    <svg>
+                                        <use xlink:href="./images/svg/sprite.svg#btn-left"/>
+                                     </svg>
+                                </div>
+                                <div class="tabs__swiper-button-next swiper-button-next">
+                                    <svg>
+                                        <use xlink:href="./images/svg/sprite.svg#btn-right"/>
+                                     </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tabs__body tabs-body-2">
+                            <!-- Slider main container -->
+                            <div class="tabs__swiper swiper">
+                                <!-- Additional required wrapper -->
+                                <div class="tabs__swiper-wrapper swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="tabs__swiper-slide swiper-slide tabs-slide">
+                                    <a href="#" class="tabs-slide__box-img">
+                                        <img src="./images/uptown-luxury-cars.jpg" alt="UPTOWN LUXURY CARS">
+                                        <button class="tabs-slide__btn-more _btn-purple ">Tabs-slide</button>                                    
+                                    </a>
+                                    <div class="tabs-slide__discription">
+                                        <a href="#" class="tabs-slide__title">RENT A FERRARI F8 WITH EXCLUSIVE PRICING FROM UPTOWN LUXURY CARS</a>
+                                        <div class="tabs-slide__inner">
+                                            <div class="tabs-slide__prices">
+                                                <div class="tabs-slide__new _new">USD <span>2,000.00</span></div>
+                                                <div class="tabs-slide__old _old">USD <span>4,000.00</span></div>
+                                            </div>
+                                            <div class="tabs-slide__time">
+                                                <svg>
+                                                    <use xlink:href="./images/svg/sprite.svg#time"/>
+                                                </svg>
+                                                <span>1 h</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tabs__swiper-slide swiper-slide tabs-slide">
+                                    <a href="#" class="tabs-slide__box-img">
+                                        <img src="./images/burj-club.jpg" alt="burj club">
+                                        <button class="tabs-slide__btn-more _btn-purple ">Tabs-slide</button>                                    
+                                    </a>
+                                    <div class="tabs-slide__discription">
+                                        <a href="#" class="tabs-slide__title">BRUNCH WITH POOL ACCESS AT ROOFTOP, THE BURJ CLUB</a>
+                                        <div class="tabs-slide__inner">
+                                            <div class="tabs-slide__prices">
+                                                <div class="tabs-slide__new _new">USD <span>2,000.00</span></div>
+                                                <div class="tabs-slide__old _old">USD <span>4,000.00</span></div>
+                                            </div>
+                                            <div class="tabs-slide__time">
+                                                <svg>
+                                                    <use xlink:href="./images/svg/sprite.svg#time"/>
+                                                </svg>
+                                                <span>1 h</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tabs__swiper-slide swiper-slide tabs-slide">
+                                    <a href="#" class="tabs-slide__box-img">
+                                        <img src="./images/live-the-billionaire.jpg" alt="LIVE THE BILLIONAIRE">
+                                        <button class="tabs-slide__btn-more _btn-purple ">Tabs-slide</button>                                    
+                                    </a>
+                                    <div class="tabs-slide__discription">
+                                        <a href="#" class="tabs-slide__title">LIVE THE BILLIONAIRE LIFE FOR A DAY IN DUBAI</a>
+                                        <div class="tabs-slide__inner">
+                                            <div class="tabs-slide__prices">
+                                                <div class="tabs-slide__new _new">USD <span>2,000.00</span></div>
+                                                <div class="tabs-slide__old _old">USD <span>4,000.00</span></div>
+                                            </div>
+                                            <div class="tabs-slide__time">
+                                                <svg>
+                                                    <use xlink:href="./images/svg/sprite.svg#time"/>
+                                                </svg>
+                                                <span>1 h</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                                <!-- If we need navigation buttons -->
+                                <div class="tabs__swiper-button-prev swiper-button-prev">
+                                    <svg>
+                                        <use xlink:href="./images/svg/sprite.svg#btn-left"/>
+                                     </svg>
+                                </div>
+                                <div class="tabs__swiper-button-next swiper-button-next">
+                                    <svg>
+                                        <use xlink:href="./images/svg/sprite.svg#btn-right"/>
+                                     </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tabs__body tabs-body-3">
+                            <!-- Slider main container -->
+                            <div class="tabs__swiper swiper">
+                                <!-- Additional required wrapper -->
+                                <div class="tabs__swiper-wrapper swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="tabs__swiper-slide swiper-slide tabs-slide">
+                                    <a href="#" class="tabs-slide__box-img">
+                                        <img src="./images/uptown-luxury-cars.jpg" alt="UPTOWN LUXURY CARS">
+                                        <button class="tabs-slide__btn-more _btn-purple ">Tabs-slide</button>                                    
+                                    </a>
+                                    <div class="tabs-slide__discription">
+                                        <a href="#" class="tabs-slide__title">RENT A FERRARI F8 WITH EXCLUSIVE PRICING FROM UPTOWN LUXURY CARS</a>
+                                        <div class="tabs-slide__inner">
+                                            <div class="tabs-slide__prices">
+                                                <div class="tabs-slide__new _new">USD <span>2,000.00</span></div>
+                                                <div class="tabs-slide__old _old">USD <span>4,000.00</span></div>
+                                            </div>
+                                            <div class="tabs-slide__time">
+                                                <svg>
+                                                    <use xlink:href="./images/svg/sprite.svg#time"/>
+                                                </svg>
+                                                <span>1 h</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tabs__swiper-slide swiper-slide tabs-slide">
+                                    <a href="#" class="tabs-slide__box-img">
+                                        <img src="./images/burj-club.jpg" alt="burj club">
+                                        <button class="tabs-slide__btn-more _btn-purple ">Tabs-slide</button>                                    
+                                    </a>
+                                    <div class="tabs-slide__discription">
+                                        <a href="#" class="tabs-slide__title">BRUNCH WITH POOL ACCESS AT ROOFTOP, THE BURJ CLUB</a>
+                                        <div class="tabs-slide__inner">
+                                            <div class="tabs-slide__prices">
+                                                <div class="tabs-slide__new _new">USD <span>2,000.00</span></div>
+                                                <div class="tabs-slide__old _old">USD <span>4,000.00</span></div>
+                                            </div>
+                                            <div class="tabs-slide__time">
+                                                <svg>
+                                                    <use xlink:href="./images/svg/sprite.svg#time"/>
+                                                </svg>
+                                                <span>1 h</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tabs__swiper-slide swiper-slide tabs-slide">
+                                    <a href="#" class="tabs-slide__box-img">
+                                        <img src="./images/live-the-billionaire.jpg" alt="LIVE THE BILLIONAIRE">
+                                        <button class="tabs-slide__btn-more _btn-purple ">Tabs-slide</button>                                    
+                                    </a>
+                                    <div class="tabs-slide__discription">
+                                        <a href="#" class="tabs-slide__title">LIVE THE BILLIONAIRE LIFE FOR A DAY IN DUBAI</a>
+                                        <div class="tabs-slide__inner">
+                                            <div class="tabs-slide__prices">
+                                                <div class="tabs-slide__new _new">USD <span>2,000.00</span></div>
+                                                <div class="tabs-slide__old _old">USD <span>4,000.00</span></div>
+                                            </div>
+                                            <div class="tabs-slide__time">
+                                                <svg>
+                                                    <use xlink:href="./images/svg/sprite.svg#time"/>
+                                                </svg>
+                                                <span>1 h</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tabs__swiper-slide swiper-slide tabs-slide">
+                                    <a href="#" class="tabs-slide__box-img">
+                                        <img src="./images/friday-brunch.jpg" alt="FRIDAY BRUNCH">
+                                        <button class="tabs-slide__btn-more _btn-purple ">Tabs-slide</button>                                    
+                                    </a>
+                                    <div class="tabs-slide__discription">
+                                        <a href="#" class="tabs-slide__title">FRIDAY BRUNCH AT FRANGIPANI ON ZAYA NURAI ISLAND, ABU DHABI</a>
+                                        <div class="tabs-slide__inner">
+                                            <div class="tabs-slide__prices">
+                                                <div class="tabs-slide__new _new">USD <span>2,000.00</span></div>
+                                                <div class="tabs-slide__old _old">USD <span>4,000.00</span></div>
+                                            </div>
+                                            <div class="tabs-slide__time">
+                                                <svg>
+                                                    <use xlink:href="./images/svg/sprite.svg#time"/>
+                                                </svg>
+                                                <span>1 h</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tabs__swiper-slide swiper-slide tabs-slide">
+                                    <a href="#" class="tabs-slide__box-img">
+                                        <img src="./images/flyboard.jpg" alt="Flyboard">
+                                        <button class="tabs-slide__btn-more _btn-purple ">Tabs-slide</button>                                    
+                                    </a>
+                                    <div class="tabs-slide__discription">
+                                        <a href="#" class="tabs-slide__title">Flyboard in Dubai marina</a>
+                                        <div class="tabs-slide__inner">
+                                            <div class="tabs-slide__prices">
+                                                <div class="tabs-slide__new _new">USD <span>2,000.00</span></div>
+                                                <div class="tabs-slide__old _old">USD <span>4,000.00</span></div>
+                                            </div>
+                                            <div class="tabs-slide__time">
+                                                <svg>
+                                                    <use xlink:href="./images/svg/sprite.svg#time"/>
+                                                </svg>
+                                                <span>1 h</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tabs__swiper-slide swiper-slide tabs-slide">
+                                    <a href="#" class="tabs-slide__box-img">
+                                        <img src="./images/uptown-luxury-cars.jpg" alt="UPTOWN LUXURY CARS">
+                                        <button class="tabs-slide__btn-more _btn-purple ">Tabs-slide</button>                                    
+                                    </a>
+                                    <div class="tabs-slide__discription">
+                                        <a href="#" class="tabs-slide__title">RENT A FERRARI F8 WITH EXCLUSIVE PRICING FROM UPTOWN LUXURY CARS</a>
+                                        <div class="tabs-slide__inner">
+                                            <div class="tabs-slide__prices">
+                                                <div class="tabs-slide__new _new">USD <span>2,000.00</span></div>
+                                                <div class="tabs-slide__old _old">USD <span>4,000.00</span></div>
+                                            </div>
+                                            <div class="tabs-slide__time">
+                                                <svg>
+                                                    <use xlink:href="./images/svg/sprite.svg#time"/>
+                                                </svg>
+                                                <span>1 h</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                                <!-- If we need navigation buttons -->
+                                <div class="tabs__swiper-button-prev swiper-button-prev">
+                                    <svg>
+                                        <use xlink:href="./images/svg/sprite.svg#btn-left"/>
+                                     </svg>
+                                </div>
+                                <div class="tabs__swiper-button-next swiper-button-next">
+                                    <svg>
+                                        <use xlink:href="./images/svg/sprite.svg#btn-right"/>
+                                     </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tabs__body tabs-body-4">
+                            <!-- Slider main container -->
+                            <div class="tabs__swiper swiper">
+                                <!-- Additional required wrapper -->
+                                <div class="tabs__swiper-wrapper swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="tabs__swiper-slide swiper-slide tabs-slide">
+                                    <a href="#" class="tabs-slide__box-img">
+                                        <img src="./images/uptown-luxury-cars.jpg" alt="UPTOWN LUXURY CARS">
+                                        <button class="tabs-slide__btn-more _btn-purple ">Tabs-slide</button>                                    
+                                    </a>
+                                    <div class="tabs-slide__discription">
+                                        <a href="#" class="tabs-slide__title">RENT A FERRARI F8 WITH EXCLUSIVE PRICING FROM UPTOWN LUXURY CARS</a>
+                                        <div class="tabs-slide__inner">
+                                            <div class="tabs-slide__prices">
+                                                <div class="tabs-slide__new _new">USD <span>2,000.00</span></div>
+                                                <div class="tabs-slide__old _old">USD <span>4,000.00</span></div>
+                                            </div>
+                                            <div class="tabs-slide__time">
+                                                <svg>
+                                                    <use xlink:href="./images/svg/sprite.svg#time"/>
+                                                </svg>
+                                                <span>1 h</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                                <!-- If we need navigation buttons -->
+                                <div class="tabs__swiper-button-prev swiper-button-prev">
+                                    <svg>
+                                        <use xlink:href="./images/svg/sprite.svg#btn-left"/>
+                                     </svg>
+                                </div>
+                                <div class="tabs__swiper-button-next swiper-button-next">
+                                    <svg>
+                                        <use xlink:href="./images/svg/sprite.svg#btn-right"/>
+                                     </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tabs__body tabs-body-5">
+                            <!-- Slider main container -->
+                            <div class="tabs__swiper swiper">
+                                <!-- Additional required wrapper -->
+                                <div class="tabs__swiper-wrapper swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="tabs__swiper-slide swiper-slide tabs-slide">
+                                    <a href="#" class="tabs-slide__box-img">
+                                        <img src="./images/uptown-luxury-cars.jpg" alt="UPTOWN LUXURY CARS">
+                                        <button class="tabs-slide__btn-more _btn-purple ">Tabs-slide</button>                                    
+                                    </a>
+                                    <div class="tabs-slide__discription">
+                                        <a href="#" class="tabs-slide__title">RENT A FERRARI F8 WITH EXCLUSIVE PRICING FROM UPTOWN LUXURY CARS</a>
+                                        <div class="tabs-slide__inner">
+                                            <div class="tabs-slide__prices">
+                                                <div class="tabs-slide__new _new">USD <span>2,000.00</span></div>
+                                                <div class="tabs-slide__old _old">USD <span>4,000.00</span></div>
+                                            </div>
+                                            <div class="tabs-slide__time">
+                                                <svg>
+                                                    <use xlink:href="./images/svg/sprite.svg#time"/>
+                                                </svg>
+                                                <span>1 h</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tabs__swiper-slide swiper-slide tabs-slide">
+                                    <a href="#" class="tabs-slide__box-img">
+                                        <img src="./images/burj-club.jpg" alt="burj club">
+                                        <button class="tabs-slide__btn-more _btn-purple ">Tabs-slide</button>                                    
+                                    </a>
+                                    <div class="tabs-slide__discription">
+                                        <a href="#" class="tabs-slide__title">BRUNCH WITH POOL ACCESS AT ROOFTOP, THE BURJ CLUB</a>
+                                        <div class="tabs-slide__inner">
+                                            <div class="tabs-slide__prices">
+                                                <div class="tabs-slide__new _new">USD <span>2,000.00</span></div>
+                                                <div class="tabs-slide__old _old">USD <span>4,000.00</span></div>
+                                            </div>
+                                            <div class="tabs-slide__time">
+                                                <svg>
+                                                    <use xlink:href="./images/svg/sprite.svg#time"/>
+                                                </svg>
+                                                <span>1 h</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tabs__swiper-slide swiper-slide tabs-slide">
+                                    <a href="#" class="tabs-slide__box-img">
+                                        <img src="./images/live-the-billionaire.jpg" alt="LIVE THE BILLIONAIRE">
+                                        <button class="tabs-slide__btn-more _btn-purple ">Tabs-slide</button>                                    
+                                    </a>
+                                    <div class="tabs-slide__discription">
+                                        <a href="#" class="tabs-slide__title">LIVE THE BILLIONAIRE LIFE FOR A DAY IN DUBAI</a>
+                                        <div class="tabs-slide__inner">
+                                            <div class="tabs-slide__prices">
+                                                <div class="tabs-slide__new _new">USD <span>2,000.00</span></div>
+                                                <div class="tabs-slide__old _old">USD <span>4,000.00</span></div>
+                                            </div>
+                                            <div class="tabs-slide__time">
+                                                <svg>
+                                                    <use xlink:href="./images/svg/sprite.svg#time"/>
+                                                </svg>
+                                                <span>1 h</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tabs__swiper-slide swiper-slide tabs-slide">
+                                    <a href="#" class="tabs-slide__box-img">
+                                        <img src="./images/friday-brunch.jpg" alt="FRIDAY BRUNCH">
+                                        <button class="tabs-slide__btn-more _btn-purple ">Tabs-slide</button>                                    
+                                    </a>
+                                    <div class="tabs-slide__discription">
+                                        <a href="#" class="tabs-slide__title">FRIDAY BRUNCH AT FRANGIPANI ON ZAYA NURAI ISLAND, ABU DHABI</a>
+                                        <div class="tabs-slide__inner">
+                                            <div class="tabs-slide__prices">
+                                                <div class="tabs-slide__new _new">USD <span>2,000.00</span></div>
+                                                <div class="tabs-slide__old _old">USD <span>4,000.00</span></div>
+                                            </div>
+                                            <div class="tabs-slide__time">
+                                                <svg>
+                                                    <use xlink:href="./images/svg/sprite.svg#time"/>
+                                                </svg>
+                                                <span>1 h</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tabs__swiper-slide swiper-slide tabs-slide">
+                                    <a href="#" class="tabs-slide__box-img">
+                                        <img src="./images/flyboard.jpg" alt="Flyboard">
+                                        <button class="tabs-slide__btn-more _btn-purple ">Tabs-slide</button>                                    
+                                    </a>
+                                    <div class="tabs-slide__discription">
+                                        <a href="#" class="tabs-slide__title">Flyboard in Dubai marina</a>
+                                        <div class="tabs-slide__inner">
+                                            <div class="tabs-slide__prices">
+                                                <div class="tabs-slide__new _new">USD <span>2,000.00</span></div>
+                                                <div class="tabs-slide__old _old">USD <span>4,000.00</span></div>
+                                            </div>
+                                            <div class="tabs-slide__time">
+                                                <svg>
+                                                    <use xlink:href="./images/svg/sprite.svg#time"/>
+                                                </svg>
+                                                <span>1 h</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tabs__swiper-slide swiper-slide tabs-slide">
+                                    <a href="#" class="tabs-slide__box-img">
+                                        <img src="./images/uptown-luxury-cars.jpg" alt="UPTOWN LUXURY CARS">
+                                        <button class="tabs-slide__btn-more _btn-purple ">Tabs-slide</button>                                    
+                                    </a>
+                                    <div class="tabs-slide__discription">
+                                        <a href="#" class="tabs-slide__title">RENT A FERRARI F8 WITH EXCLUSIVE PRICING FROM UPTOWN LUXURY CARS</a>
+                                        <div class="tabs-slide__inner">
+                                            <div class="tabs-slide__prices">
+                                                <div class="tabs-slide__new _new">USD <span>2,000.00</span></div>
+                                                <div class="tabs-slide__old _old">USD <span>4,000.00</span></div>
+                                            </div>
+                                            <div class="tabs-slide__time">
+                                                <svg>
+                                                    <use xlink:href="./images/svg/sprite.svg#time"/>
+                                                </svg>
+                                                <span>1 h</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                                <!-- If we need navigation buttons -->
+                                <div class="tabs__swiper-button-prev swiper-button-prev">
+                                    <svg>
+                                        <use xlink:href="./images/svg/sprite.svg#btn-left"/>
+                                     </svg>
+                                </div>
+                                <div class="tabs__swiper-button-next swiper-button-next">
+                                    <svg>
+                                        <use xlink:href="./images/svg/sprite.svg#btn-right"/>
+                                     </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tabs__body tabs-body-6">
+                            <!-- Slider main container -->
+                            <div class="tabs__swiper swiper">
+                                <!-- Additional required wrapper -->
+                                <div class="tabs__swiper-wrapper swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="tabs__swiper-slide swiper-slide tabs-slide">
+                                    <a href="#" class="tabs-slide__box-img">
+                                        <img src="./images/uptown-luxury-cars.jpg" alt="UPTOWN LUXURY CARS">
+                                        <button class="tabs-slide__btn-more _btn-purple ">Tabs-slide</button>                                    
+                                    </a>
+                                    <div class="tabs-slide__discription">
+                                        <a href="#" class="tabs-slide__title">RENT A FERRARI F8 WITH EXCLUSIVE PRICING FROM UPTOWN LUXURY CARS</a>
+                                        <div class="tabs-slide__inner">
+                                            <div class="tabs-slide__prices">
+                                                <div class="tabs-slide__new _new">USD <span>2,000.00</span></div>
+                                                <div class="tabs-slide__old _old">USD <span>4,000.00</span></div>
+                                            </div>
+                                            <div class="tabs-slide__time">
+                                                <svg>
+                                                    <use xlink:href="./images/svg/sprite.svg#time"/>
+                                                </svg>
+                                                <span>1 h</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tabs__swiper-slide swiper-slide tabs-slide">
+                                    <a href="#" class="tabs-slide__box-img">
+                                        <img src="./images/burj-club.jpg" alt="burj club">
+                                        <button class="tabs-slide__btn-more _btn-purple ">Tabs-slide</button>                                    
+                                    </a>
+                                    <div class="tabs-slide__discription">
+                                        <a href="#" class="tabs-slide__title">BRUNCH WITH POOL ACCESS AT ROOFTOP, THE BURJ CLUB</a>
+                                        <div class="tabs-slide__inner">
+                                            <div class="tabs-slide__prices">
+                                                <div class="tabs-slide__new _new">USD <span>2,000.00</span></div>
+                                                <div class="tabs-slide__old _old">USD <span>4,000.00</span></div>
+                                            </div>
+                                            <div class="tabs-slide__time">
+                                                <svg>
+                                                    <use xlink:href="./images/svg/sprite.svg#time"/>
+                                                </svg>
+                                                <span>1 h</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tabs__swiper-slide swiper-slide tabs-slide">
+                                    <a href="#" class="tabs-slide__box-img">
+                                        <img src="./images/live-the-billionaire.jpg" alt="LIVE THE BILLIONAIRE">
+                                        <button class="tabs-slide__btn-more _btn-purple ">Tabs-slide</button>                                    
+                                    </a>
+                                    <div class="tabs-slide__discription">
+                                        <a href="#" class="tabs-slide__title">LIVE THE BILLIONAIRE LIFE FOR A DAY IN DUBAI</a>
+                                        <div class="tabs-slide__inner">
+                                            <div class="tabs-slide__prices">
+                                                <div class="tabs-slide__new _new">USD <span>2,000.00</span></div>
+                                                <div class="tabs-slide__old _old">USD <span>4,000.00</span></div>
+                                            </div>
+                                            <div class="tabs-slide__time">
+                                                <svg>
+                                                    <use xlink:href="./images/svg/sprite.svg#time"/>
+                                                </svg>
+                                                <span>1 h</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                                <!-- If we need navigation buttons -->
+                                <div class="tabs__swiper-button-prev swiper-button-prev">
+                                    <svg>
+                                        <use xlink:href="./images/svg/sprite.svg#btn-left"/>
+                                     </svg>
+                                </div>
+                                <div class="tabs__swiper-button-next swiper-button-next">
+                                    <svg>
+                                        <use xlink:href="./images/svg/sprite.svg#btn-right"/>
+                                     </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="main__time time">
+            <div class="time__container _container">
+                <h2 class="time__title _title-2">How to become a part of iconik?</h2>
+                <div class="time__swiper swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="time__swiper-wrapper swiper-wrapper">
+                      <!-- Slides -->
+                      <div class="time__swiper-slide">
+                        <div class="time__item">
+                            <div class="time__icon">
+                                <img src="./images/svg/request.svg" alt="Request">
+                            </div>
+                            <h6 class="time__name _title-6">1. You leave a request
+                                online</h6>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                        </div>
+                      </div>
+                      <div class="time__swiper-slide">
+                        <div class="time__item">
+                            <div class="time__icon">
+                                <img src="./images/svg/consultation.svg" alt="Consultation">
+                            </div>
+                            <h6 class="time__name _title-6">2. Consultation with the manager</h6>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                        </div>
+                      </div>
+                      <div class="time__swiper-slide">
+                        <div class="time__item">
+                            <div class="time__icon">
+                                <img src="./images/svg/conditions.svg" alt="Conditions">
+                            </div>
+                            <h6 class="time__name _title-6">3. Presentation or discussion of conditions remotely</h6>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                      </div>
+                      <div class="time__swiper-slide">
+                        <div class="time__item">
+                            <div class="time__icon">
+                                <img src="./images/svg/contract.svg" alt="Contract">
+                            </div>
+                            <h6 class="time__name _title-6">4. We conclude 
+                                a contract</h6>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                        </div>
+                      </div>
+                      <div class="time__swiper-slide">
+                        <div class="time__item">
+                            <div class="time__icon">
+                                <img src="./images/svg/enjoy.svg" alt="Contract">
+                            </div>
+                            <h6 class="time__name _title-6">5. You enjoy all the benefits of membership</h6>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="time__swiper-pagination swiper-pagination"></div>
+                  
+                    <!-- If we need navigation buttons -->
+                    <div class="time__swiper-button-prev swiper-button-prev">
+                        <svg>
+                            <use xlink:href="./images/svg/sprite.svg#btn-left"/>
+                         </svg>
+                    </div>
+                    <div class="time__swiper-button-next swiper-button-next">
+                        <svg>
+                            <use xlink:href="./images/svg/sprite.svg#btn-right"/>
+                         </svg>
+                    </div>
+                  </div>
+            </div>
+        </section>
+        <section class="main__plans plans">
+            <div class="plans__container _container">
+                <h2 class="plans__title _title-2">iconik membership plans</h2>
+                <div class="plans__wrapper">
+                    <div class="plans__item plans-item">
+                        <div class="plans-item__box-img">
+                            <img src="./images/plans-item.jpg" alt="Вecorative picture from above">
+                        </div>
+                        <h4 class="plans-item__title _title-4">Basic</h4>
+                        <div class="plans-item__inner">
+                            <ul class="plans-item__list">
+                                <li class="plans-item__item">Access to iconiK Members Experience Portal</li>
+                                <li class="plans-item__item">Access to iconiK Concierge services Complimentary </li>
+                                <li class="plans-item__item">iKoins to spend on Dezerved platform (on a yearly basis) Complimentary iKoins to spend on iconiK </li>
+                            </ul>
+                            <button class="plans-item__go-info go-info"><span class="plus"></span> VIEW ALL FEATURES</button>
+                            <ul class="plans-item__list hidden">
+                                <li class="plans-item__item done">Worldwide (on a yearly basis) </li>
+                                <li class="plans-item__item done">Complimentary VIP meet & greet services</li>
+                                <li class="plans-item__item done">Complimentary airport pick up and drop off </li>
+                                <li class="plans-item__item done">Access to iconiK Lifestyle services</li>
+                            </ul>
+                        </div>
+                        <a href="tel:" class="plans-item__link _btn-purple">Get a consultation</a>
+                    </div>
+                    <div class="plans__item plans-item">
+                        <div class="plans-item__box-img">
+                            <img src="./images/plans-item.jpg" alt="Вecorative picture from above">
+                        </div>
+                        <h4 class="plans-item__title _title-4">standard</h4>
+                        <div class="plans-item__inner">
+                            <ul class="plans-item__list">
+                                <li class="plans-item__item">Access to iconiK Members Experience Portal</li>
+                                <li class="plans-item__item">Access to iconiK Concierge services Complimentary </li>
+                                <li class="plans-item__item">iKoins to spend on Dezerved platform (on a yearly basis) Complimentary iKoins to spend on iconiK </li>
+                            </ul>
+                            <button class="plans-item__go-info go-info"><span class="plus"></span> VIEW ALL FEATURES</button>
+                            <ul class="plans-item__list hidden">
+                                <li class="plans-item__item done">Worldwide (on a yearly basis) </li>
+                                <li class="plans-item__item done">Complimentary VIP meet & greet services</li>
+                                <li class="plans-item__item done">Complimentary airport pick up and drop off </li>
+                                <li class="plans-item__item done">Access to iconiK Lifestyle services</li>
+                            </ul>
+                        </div>
+                        <a href="tel:" class="plans-item__link _btn-purple">Get a consultation</a>
+                    </div>
+                    <div class="plans__item plans-item">
+                        <div class="plans-item__box-img">
+                            <img src="./images/plans-item.jpg" alt="Вecorative picture from above">
+                        </div>
+                        <h4 class="plans-item__title _title-4">individual</h4>
+                        <div class="plans-item__inner">
+                            <ul class="plans-item__list">
+                                <li class="plans-item__item">Access to iconiK Members Experience Portal</li>
+                                <li class="plans-item__item">Access to iconiK Concierge services Complimentary </li>
+                                <li class="plans-item__item">iKoins to spend on Dezerved platform (on a yearly basis) Complimentary iKoins to spend on iconiK </li>
+                            </ul>
+                            <button class="plans-item__go-info go-info"><span class="plus"></span> VIEW ALL FEATURES</button>
+                            <ul class="plans-item__list hidden">
+                                <li class="plans-item__item done">Worldwide (on a yearly basis) </li>
+                                <li class="plans-item__item done">Complimentary VIP meet & greet services</li>
+                                <li class="plans-item__item done">Complimentary airport pick up and drop off </li>
+                                <li class="plans-item__item done">Access to iconiK Lifestyle services</li>
+                            </ul>
+                        </div>
+                        <a href="tel:" class="plans-item__link _btn-purple">Get a consultation</a>
+                    </div>
+                    <div class="plans__item plans-item while-bg">
+                        <div class="plans-item__box-img">
+                            <img src="./images/plans-item.jpg" alt="Вecorative picture from above">
+                        </div>
+                        <h4 class="plans-item__title _title-4">SUPER STAR</h4>
+                        <div class="plans-item__inner">
+                            <ul class="plans-item__list">
+                                <li class="plans-item__item">Access to iconiK Members Experience Portal</li>
+                                <li class="plans-item__item">Access to iconiK Concierge services Complimentary </li>
+                                <li class="plans-item__item">iKoins to spend on Dezerved platform (on a yearly basis) Complimentary iKoins to spend on iconiK </li>
+                            </ul>
+                            <button class="plans-item__go-info go-info"><span class="plus"></span> VIEW ALL FEATURES</button>
+                            <ul class="plans-item__list hidden">
+                                <li class="plans-item__item done">Worldwide (on a yearly basis) </li>
+                                <li class="plans-item__item done">Complimentary VIP meet & greet services</li>
+                                <li class="plans-item__item done">Complimentary airport pick up and drop off </li>
+                                <li class="plans-item__item done">Access to iconiK Lifestyle services</li>
+                            </ul>
+                        </div>
+                        <a href="tel:" class="plans-item__link _btn-purple">Get a consultation</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="main__section-gallery section-gallery">
+            <div class="section-gallery__container _container">
+                <h2 class="section-gallery__title _title-2">iconik lifestyle</h2>
+                <div class="section-gallery__wrapper">
+                    <a href="./images/ihjaaz-manarikk.jpg" class="section-gallery__item img-1">
+                        <img src="./images/ihjaaz-manarikk.jpg" alt="Ihjaaz manarikk">
+                    </a>
+                    <a href="./images/desert-car.jpg" class="section-gallery__item img-2">
+                        <img src="./images/desert-car.jpg" alt="Desert car">
+                    </a>
+                    <a href="./images/portrait-beautiful-young-asian-woman-relax-happy-smile-leisure-around-outdoor-swimming-pool.jpg" class="section-gallery__item img-3">
+                        <img src="./images/portrait-beautiful-young-asian-woman-relax-happy-smile-leisure-around-outdoor-swimming-pool.jpg" alt="Portrait beautiful young asian woman relax happy smile leisure around outdoor swimming pool">
+                    </a>
+                    <a href="./images/pablo-heimplatz.jpg" class="section-gallery__item img-4">
+                        <img src="./images/pablo-heimplatz.jpg" alt="Pablo heimplatz">
+                    </a>
+                    <a href="./images/girls-partying-together-medium-shot.jpg" class="section-gallery__item img-5">
+                        <img src="./images/girls-partying-together-medium-shot.jpg" alt="Girls partying together medium shot">
+                    </a>
+                    <a href="./images/view-modern-skyscrapers-shining-sunrise-lights-dubai-marina-dubai-uae.jpg" class="section-gallery__item img-6">
+                        <img src="./images/view-modern-skyscrapers-shining-sunrise-lights-dubai-marina-dubai-uae.jpg" alt="view modern skyscrapers shining sunrise lights dubai marina dubai uae">
+                    </a>
+                    <a href="./images/fashion-photo-sexy-beautiful-women-black-bikini-relaxing-beside-swimming-pool.jpg" class="section-gallery__item img-7 hidden">
+                        <img src="./images/fashion-photo-sexy-beautiful-women-black-bikini-relaxing-beside-swimming-pool.jpg" alt="fashion photo sexy beautiful women black bikini relaxing beside swimming pool">
+                    </a>
+                    <a href="./images/city-boat-water.jpg" class="section-gallery__item img-8">
+                        <img src="./images/city-boat-water.jpg" alt="city boat water">
+                    </a>
+                    <a href="./images/abed-ismail.jpg" class="section-gallery__item img-9">
+                        <img src="./images/abed-ismail.jpg" alt="Abed ismail">
+                    </a>
+                    <a href="./images/emirates-palace-hotel.jpg" class="section-gallery__item img-10">
+                        <img src="./images/emirates-palace-hotel.jpg" alt="Emirates palace hotel">
+                    </a>
+                    <a href="./images/girl-friends-celebration-moments.png" class="section-gallery__item img-11 hidden">
+                        <img src="./images/girl-friends-celebration-moments.png" alt="Girl friends celebration moments">
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="main__events events">
+            <div class="events__container _container">
+                <h2 class="events__title _title-2">Iconik latest events</h2>
+                <div class="events__swiper swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="events__swiper-wrapper swiper-wrapper">
+                      <!-- Slides -->
+                      <div class="events__swiper-slide left">
+                        <video poster="./images/medium-shot-girls-partying-together.jpg" src=""></video>
+                        <button class="events__play video-play">
+                            <span>
+                                <svg>
+                                    <use xlink:href="./images/svg/sprite.svg#paligon"/>
+                                </svg>
+                            </span>
+                        </button>
+                        <div class="events__discription">
+                            <p>Dubai Marina Yacht Tour with Barbecue Lunch - exclusive Yachts</p>
+                        </div>
+                      </div>
+                      <div class="events__swiper-slide center">
+                        <video poster="./images/luxury-dawn-swimming-destinations-sunset.jpg" src=""></video>
+                        <button class="events__play video-play">
+                            <span>
+                                <svg>
+                                    <use xlink:href="./images/svg/sprite.svg#paligon"/>
+                                </svg>
+                            </span>
+                        </button>
+                        <div class="events__discription">
+                            <p>Dubai Marina Yacht Tour with Barbecue Lunch - exclusive Yachts</p>
+                        </div>
+                      </div>
+                      <div class="events__swiper-slide right">
+                        <video poster="./images/medium-shot-girls-partying-together.jpg" src=""></video>
+                        <button class="events__play video-play">
+                            <span>
+                                <svg>
+                                    <use xlink:href="./images/svg/sprite.svg#paligon"/>
+                                </svg>
+                            </span>
+                        </button>
+                        <div class="events__discription">
+                            <p>Dubai Marina Yacht Tour with Barbecue Lunch - exclusive Yachts</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="events__btn _btn-purple ">Choose a plan</button>
+            </div>
+        </section>
+        <section class="main__managers managers">
+            <div class="managers__container _container">
+                <h2 class="managers__title _title-2">Iconik managers will provide you with the best experience</h2>
+                <div class="managers__inner">
+                    <div class="managers__swiper swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="managers__swiper-wrapper swiper-wrapper">
+                          <!-- Slides -->
+                          <div class="managers__swiper-slide swiper-slide">
+                            <a href="#" class="managers__box-img">
+                                <img src="./images/mahammed-naqvi.jpg" alt="Iconik lifestyle manager">
+                            </a>
+                            <a href="#" class="managers__name">Mahammed Naqvi</a>
+                            <div class="managers__work">Iconik lifestyle manager</div>
+                          </div>
+                          <div class="managers__swiper-slide swiper-slide">
+                            <a href="#" class="managers__box-img">
+                                <img src="./images/aliya-mir.jpg" alt="Iconik lifestyle manager">
+                            </a>
+                            <a href="#" class="managers__name">Aliya Mir</a>
+                            <div class="managers__work">Iconik lifestyle manager</div>
+                          </div>
+                          <div class="managers__swiper-slide swiper-slide">
+                            <a href="#" class="managers__box-img">
+                                <img src="./images/unais-el-Baccus.jpg" alt="Iconik lifestyle manager">
+                            </a>
+                            <a href="#" class="managers__name">Unais el-Baccus</a>
+                            <div class="managers__work">Iconik lifestyle manager</div>
+                          </div>
+                          <div class="managers__swiper-slide swiper-slide">
+                            <a href="#" class="managers__box-img">
+                                <img src="./images/mahammed-naqvi.jpg" alt="Iconik lifestyle manager">
+                            </a>
+                            <a href="#" class="managers__name">Mahammed Naqvi</a>
+                            <div class="managers__work">Iconik lifestyle manager</div>
+                          </div>
+                        </div>                  
+                        <!-- If we need navigation buttons -->
+
+                      </div>
+                      <div class="managers__swiper-button-prev swiper-button-prev">
+                        <svg>
+                            <use xlink:href="./images/svg/sprite.svg#btn-left"/>
+                         </svg>
+                    </div>
+                    <div class="managers__swiper-button-next swiper-button-next">
+                        <svg>
+                            <use xlink:href="./images/svg/sprite.svg#btn-right"/>
+                         </svg>
+                    </div>
+                </div>
+                <div class="managers__box-form managers-box-form" id="consultation">
+                    <h3 class="managers-box-form__title _title-3">Get a free consultation</h3>
+                    <form action="" class="managers-box-form__form-consultation form-consultation">
+                        <div class="managers-box-form__wrapper">
+                            <div class="form-consultation__item">
+                                <input type="text" name="name" placeholder="Fist name">
+                                <svg>
+                                    <use xlink:href="./images/svg/sprite.svg#user"/>
+                                 </svg>
+                            </div>
+                            <div class="form-consultation__item phone">
+                                <div class="select location" name="location" id="location">
+                                    <div class="select-active">
+                                        <span><img src="./images/Flag_of_the_United_Arab_Emirates.jpg" alt="Arab_Emirates"></span>
+                                        <svg class="icon">
+                                            <use xlink:href="./images/svg/sprite.svg#btn-bottom"/>
+                                        </svg>
+                                    </div>
+                                    <ul class="select-list">
+                                        <li class="selec-item">
+                                            <img src="./images/Flag_of_the_United_Arab_Emirates.jpg" alt="Arab_Emirates">
+                                        </li>
+                                    </ul>
+                                </div>
+                                <input type="number" name="phone" placeholder="+ 971 123 4567">
+                                <svg>
+                                    <use xlink:href="./images/svg/sprite.svg#phone"/>
+                                 </svg>
+                            </div>
+                            <div class="form-consultation__item">
+                                <input type="text" name="email" placeholder="Email adress">
+                                <svg>
+                                    <use xlink:href="./images/svg/sprite.svg#email"/>
+                                 </svg>
+                            </div>
+                        </div>
+                        <div class="form-consultation__box-submit">
+                            <button class="form-consultation__submit">Get a consultation</button>
+                            <p>By clicking the button you are accepting to receive an email about club membership and a phone call to arrange a show-around.</p>
+                        </div>
+                    </form>
+                </div>
+                </div>
+        </section>
+        <section class="main__social social">
+            <div class="social__container _container">
+                <div class="social__left social-left">
+                    <h2 class="social-left__title _title-2">We are on 
+                        social media</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.</p>
+                    <ul class="social-left__links">
+                        <div class="social-left__item">
+                            <a class="social-left__link links" href="#">
+                                <svg>
+                                    <use xlink:href="./images/svg/sprite.svg#btn-go"/>
+                                 </svg>
+                                <span>INSTAGRAM</span>
+                            </a>
+                        </div>
+                        <div class="social-left__item">
+                            <a class="social-left__link links" href="#">
+                                <svg>
+                                    <use xlink:href="./images/svg/sprite.svg#btn-go"/>
+                                 </svg>
+                                <span>FACEBOOK</span>
+                            </a>
+                        </div>
+                        <div class="social-left__item">
+                            <a class="social-left__link links" href="#">
+                                <svg>
+                                    <use xlink:href="./images/svg/sprite.svg#btn-go"/>
+                                 </svg>
+                                <span>LENKEDIN</span>
+                            </a>
+                        </div>
+                    </ul>
+                </div>
+                <div class="social__right social-right">
+                    <div class="social-right__panel panel">
+                        <div class="panel__header panel-header">
+                            <div class="panel__info">
+                                <div class="panel-header__icon">
+                                    <svg>
+                                        <use xlink:href="./images/svg/sprite.svg#i"/>
+                                     </svg>
+                                </div>
+                                <div class="panel-header__inner">
+                                    <span class="panel-header__name">@iconik_event_atelier</span>
+                                    <a href="#" class="panel-header__discription ">Description here</a>
+                                </div>
+                            </div>
+                            <div class="panel-header__links">
+                                <a href="#" class="_btn-purple">Follow</a>
+                                <a href="#" class="_btn-purple mob">+</a>
+                            </div>
+                        </div>
+                        <div class="panel__content">
+                            <ul class="panel__list">
+                                <li class="panel__item">
+                                    <img src="./images/medium-shot-girls-partying-together-min.jpg" alt="Medium shot girl spartying together">
+                                </li>
+                                <li class="panel__item">
+                                    <img src="./images/luxury-dawn-swimming-destinations-sunset-min.jpg" alt="Luxury dawn swimming destinations sunset">
+                                </li>
+                                <li class="panel__item">
+                                    <img src="./images/girls-partying-together-medium-shot-min.jpg" alt="girls partying together medium shot">
+                                </li>
+                                <li class="panel__item">
+                                    <img src="./images/luxury-dawn-swimming-destinations-sunset-min.jpg" alt="luxury dawn swimming destinations sunset">
+                                </li>
+                                <li class="panel__item">
+                                    <img src="./images/pablo-heimplatz-ZODcBkEohk8-unsplash-min.jpg" alt="pablo heimplatz">
+                                </li>
+                                <li class="panel__item">
+                                    <img src="./images/fashion-photo-sexy-beautiful-women-black-bikini-relaxing-beside-swimming-pool-min.jpg" alt="Ashion photo sexy beautiful women black bikini relaxing beside swimming pool">
+                                </li>
+                            </ul>
+                            <button class="panel__new">
+                                <div class="panel__box-icon">
+                                    <svg class="random-1">
+                                        <use xlink:href="./images/svg/sprite.svg#random-1"/>
+                                     </svg>
+                                     <svg class="random-2">
+                                        <use xlink:href="./images/svg/sprite.svg#random-2"/>
+                                     </svg>
+                                </div>
+                                Load more
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container _container">
+            <div class="footer__wrapper footer-wrapper">
+                <div class="footer__info footer-info">
+                    <div class="footer-info__wrapper">
+                        <div class="footer-info__logo">
+                            <img src="./images/svg/logo.svg" alt="Logo">
+                        </div>
+                        <div class="footer-info__box-container">
+                            <ul class="footer-info__list">
+                                <li class="footer-info__item"><a href="#" class="footer-info__link">About</a></li>
+                                <li class="footer-info__item"><a href="#" class="footer-info__link">Services</a></li>
+                                <li class="footer-info__item"><a href="#" class="footer-info__link">Gallery</a></li>
+                                <li class="footer-info__item"><a href="#" class="footer-info__link">Contacts</a></li>
+                                <li class="footer-info__item"><a href="#" class="footer-info__link">Privacy policy</a></li>
+                            </ul>
+                            <div class="footer-info__inner">
+                                <div class="footer-info__contact">
+                                    <div class="footer-info__label">PHONE</div>
+                                    <a href="tel:+971552308085" class="footer-info__link">+971 55 230 8085</a>
+                                </div>
+                                <div class="footer-info__contact">
+                                    <div class="footer-info__label">EMAIL</div>
+                                    <a href="mailto:mailexample@gmail.com" class="footer-info__link">mailexample@gmail.com</a>
+                                </div>
+                                <a href="" class="footer-info__btn _btn-purple">Contact Us</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__map">
+                    <img src="./images/map.jpg" alt="Map">
+                    <a class="social-left__link links" href="#">
+                        <svg>
+                            <use xlink:href="./images/svg/sprite.svg#btn-go"/>
+                         </svg>
+                        <span>OPEN IN GOOGLE MAPS</span>
+                    </a>
+                </div>
+            </div>
+            <div class="footer__bootom footer-bootom">
+                <div class="footer-bootom__wrapper">
+                    <div class="footer-bootom__author">© 2023 All rights reserved.</div>
+                    <ul class="footer-bootom__list">
+                        <li class="footer-bootom__item"><a href="#" class="footer-bootom__link">Privacy policy</a></li>
+                        <span>/</span>
+                        <li class="footer-bootom__item"><a href="#" class="footer-bootom__link">Club rules</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="./js/lg-zoom.umd.js"></script>
+    <script src="./js/lg-thumbnail.min.js"></script>
+    <script src="./js/lightgallery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>

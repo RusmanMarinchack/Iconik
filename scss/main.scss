@@ -1,0 +1,281 @@
+@import './fonts';
+@import './normalize';
+@import './vars';
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: rgba(27, 27, 27, 1);
+    color: rgba(255, 255, 255, 1);
+    font-family: "Manrope", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+._container {
+    max-width: 1190px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+._title-1 {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 40px;
+    letter-spacing: 0;
+    font-family: "Al_Veshion", sans-serif;
+
+    @media screen and (min-width: $minTabel) {
+        font-size: 80px;
+        line-height: 80px;
+        letter-spacing: 0;
+    }
+}
+
+._title-2 {
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0;
+    font-family: "Al_Veshion", sans-serif;
+
+    @media screen and (min-width: $minTabel) {
+        font-size: 48px;
+        line-height: 64px;
+        letter-spacing: 0;
+    }
+}
+
+._title-3 {
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 27px;
+    letter-spacing: 0;
+    font-family: "Al_Veshion", sans-serif;
+
+    @media screen and (min-width: $minTabel) {
+        font-size: 36px;
+        line-height: 48px;
+        letter-spacing: 0;
+    }
+}
+
+._title-4 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: 0;
+    font-family: "Al_Veshion", sans-serif;
+
+    @media screen and (min-width: $minTabel) {
+        font-size: 24px;
+        line-height: 32px;
+        letter-spacing: 0;
+    }
+}
+
+._title-5 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: 0;
+    font-family: "Al_Veshion", sans-serif;
+
+    @media screen and (min-width: $minTabel) {
+        font-size: 20px;
+        line-height: 30px;
+        letter-spacing: 0;
+    }
+}
+
+._title-6 {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0;
+
+    @media screen and (min-width: $minTabel) {
+        font-size: 18px;
+        line-height: 24px;
+        letter-spacing: 0;
+    }
+}
+
+._btn-purple {
+    outline: solid 2px #8B32FE;
+    background: #8B32FE;
+
+    &:hover {
+        outline:3px solid #8B32FE;
+        outline-offset: 3px;
+    }
+
+    &:active {
+        box-shadow: 0px 3px 8px 0px #000 inset;
+        transition: all 0.1s;
+    }
+}
+
+.icon {
+    width: 6px;
+    height: 10px;
+    fill:#fff; 
+    fill-opacity: 0.5;
+}
+
+.melody {
+    position: absolute;
+    bottom: 60px;
+    right: 40px; 
+    background: transparent;
+    border: none;
+    z-index: 2;
+
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 45%;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background: #fff;
+        transform: rotate(-45deg);
+    }
+
+    &.active {
+        &::before {
+            width: 0;
+        }
+    }
+
+    & svg {
+     width: 36px;
+     height: 28px;
+     fill: transparent;
+     stroke: #fff;
+    }
+ }
+
+ ._new {
+    color: #fff;
+ }
+
+ ._old {
+    text-decoration: line-through;
+    color: rgba(97, 93, 109, 1);
+ }
+
+#audio {
+    display: none;
+}
+
+.swiper-button-prev.hidden, .swiper-button-next.hidden {
+    display: none !important;
+}
+
+
+
+.swiper-button-prev.swiper-button-disabled, .swiper-button-next.swiper-button-disabled {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.swiper-button-prev::after, .swiper-button-next::after {
+    display: none;
+}
+
+.swiper-button-prev svg, .swiper-button-next svg {
+    fill: transparent;
+    stroke: #fff;
+    height: 50px;
+}
+
+.links {
+    display: block;
+    width: 90px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border: 1px solid #fff;
+    text-decoration: none;
+    font-size: 12px;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    @media screen and (min-width: $phone) {
+        width: 110px;
+        height: 60px;
+
+        & svg {
+            width: 14px;
+            height: 14px;
+
+            
+        }
+    }
+
+    @media screen and (min-width: $minMack) {
+        width: 170px;
+        height: 80px;
+        font-size: 15px;
+    }
+
+    & svg {
+        position: absolute;
+        top: 2px;
+        right: 2px;
+        width: 8px;
+        height: 8px;
+        fill: transparent;
+        stroke: white;
+        stroke-width: 1.5;
+        stroke-linecap: square;
+        stroke-linejoin: round;
+        transition: all 0.3s;
+
+        @media screen and (min-width: $phone) {
+            top: 8px;
+            right: 8px;
+        }
+
+        @media screen and (min-width: $minMack) {
+            width: 16px;
+            height: 16px;
+        }
+    }
+}
+
+@import './header';
+
+@import './home';
+@import './services';
+@import './time';
+@import './plans';
+@import './gallery-section';
+@import './events';
+@import './managers';
+@import './social';
+
+@import './footer';
+

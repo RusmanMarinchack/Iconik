@@ -1,0 +1,129 @@
+.time {
+    padding: 60px 0;
+
+    @media screen and (min-width: $minTabel) {
+        padding: 90px 0 180px 0;
+    }
+
+    // .time__title
+
+    &__title {
+        line-height: 24px;
+        font-size: 24px;
+        margin-bottom: 40px;
+
+        @media screen and (min-width: $tabel) {
+            font-size: 48px;
+            margin-bottom: 70px;
+        }
+    }
+
+    // .time__swiper
+
+    &__swiper {
+        padding-bottom: 80px;
+
+        @media screen and (min-width: $tabel) {
+            padding-bottom: 0;
+        }
+    }
+
+    // .time__swiper-wrapper
+
+    &__swiper-wrapper {
+        padding-bottom: 90px;
+
+        @media screen and (min-width: $tabel) {
+            display: flex;
+            padding-bottom: 0;
+        }
+        
+    }
+
+    // .time__swiper-slide
+
+    &__swiper-slide {
+        text-align: center;
+
+        @media screen and (min-width: $tabel) {
+            &:not(:last-child) {
+                margin-right: 28px;
+            }
+        }
+    }
+
+    // .time__item
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        & p {
+            font-size: 15px;
+            color: rgba(97, 93, 109, 1);
+            line-height: 22px;
+        }
+    }
+
+    // .time__icon
+
+    &__icon {
+        width: 60px;
+        margin-bottom: 26px;
+
+        @media screen and (min-width: $minMack) {
+            width: 150px;
+            margin-bottom: 46px;
+        }
+
+        & img {
+            width: 100%;
+        }
+    }
+
+    &__name {
+        font-size: 15px;
+        margin-bottom: 8px;
+
+        @media screen and (min-width: $minMack) {
+            font-size: 18px;
+            margin-bottom: 16px;
+        }
+    }
+
+    // .time__swiper-pagination
+
+    &__swiper-pagination {
+        top: 77% !important;
+
+        & .swiper-pagination-bullet {
+            width: 4px;
+            height: 4px;
+            border-radius: 50%;
+            background: #fff;
+            opacity: 1;
+            transition: all 0.4s;
+
+            &.swiper-pagination-bullet-active {
+                width: 24px;
+                border-radius: 4px;
+            }
+        }
+    }
+
+    // .time__swiper-button-prev
+
+    .swiper-button-prev, .swiper-button-next {
+        width: 50px;
+        height: 50px;
+        padding: 10px;
+        top: 80%;
+        border: 1px solid #fff;
+        border-radius: 50%;
+
+        @media screen and (min-width: $tabel) {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,300 @@
+.managers {
+    padding: 60px 0;
+    
+    @media screen and (min-width: $tabel) {
+        padding: 90px 0;
+    }
+
+    // .managers__container
+
+    &__container {
+        position: relative;
+    }
+
+    // .managers__title
+
+    &__title {
+        margin-bottom: 78px;
+    }
+
+    // .managers__wrapper
+
+    &__inner {
+        position: relative;
+    }
+
+    // .managers__swiper
+
+    &__swiper {
+        margin-bottom: 90px;
+    }
+
+    // .managers__box-img
+
+    &__box-img {
+        display: block;
+        margin-bottom: 20px;
+
+        & img {
+            display: block;
+            width: 100%;
+        }
+    }
+
+    // .managers__name
+
+    &__name {
+        display: block;
+        font-size: 20px;
+        color: #fff;
+        text-decoration: none;
+        margin-bottom: 6px;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    // .managers__work
+
+    &__work {
+        font-size: 15px;
+        color: rgba(97, 93, 109, 1);
+        font-weight: 400;
+    }
+
+    // .managers__swiper-button-prev
+
+    & .swiper-button-prev, & .swiper-button-next {
+        width: 100px;
+        height: 100px;
+        padding: 10px;
+        border: 1px solid #fff;
+        border-radius: 50%;
+        opacity: 0;
+        visibility: hidden;
+
+        @media screen and (min-width: $minMack) {
+            opacity: 1;
+            visibility: visible;
+        }
+    
+
+    }
+
+    & .swiper-button-prev.swiper-button-disabled, & .swiper-button-next.swiper-button-disabled {
+        pointer-events: auto;
+    }
+
+    & .swiper-button-prev {
+        left: 0;
+
+        @media screen and (min-width: $minMack) {
+            left: -35px;
+        }
+    }
+
+    // .managers__swiper-button-next
+
+    & .swiper-button-next {
+        right: 0;
+
+        @media screen and (min-width: $minMack) {
+            right: -35px;
+        }
+        
+    }
+
+.managers-box-form {
+    background: rgba(139, 50, 254, 1);
+    padding: 28px;
+
+    @media screen and (min-width: $tabel) {
+        padding: 90px 70px;
+    }
+
+		// .managers-box-form__title
+
+		&__title {
+            margin-bottom: 35px;
+		}
+        
+        &__wrapper {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+            @media screen and (min-width: 850px) {
+                flex-direction: row;
+                flex: 1;
+            }
+        }
+
+}
+.form-consultation {
+
+
+		// .form-consultation__item
+
+		&__item {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            margin-right: 0px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #fff;
+            margin-bottom: 20px;
+
+            @media screen and (min-width: 850px) {
+                width: 100%;
+                
+                &:not(:last-child) {
+                    margin-right: 33px;
+                }
+            }
+
+            & svg {
+                min-width: 14px;
+                width: 14px;
+                height: 14px;
+                fill: transparent;
+                stroke: #1B1B1B;
+                stroke-width: 1.5;
+                stroke-miterlimit: 10;
+            }
+
+            .icon {
+                width: 6px;
+                height: 9px;
+            }
+
+            & input {
+                width: 100%;
+                // flex: 1;
+                border: none;
+                background: transparent;
+                outline: none;
+                color: #fff;
+
+                &::placeholder {
+                    color: #fff;
+                }
+
+                @media screen and (min-width: $phone) {
+                    font-size: 14px;
+                }
+
+                @media screen and (min-width: 850px) {
+                    width: auto;
+                    flex: 1;
+                }
+            }
+
+            &.phone {
+                flex: 1;
+            }
+		}
+
+		// .form-consultation__box-submit
+
+		&__box-submit {
+            display: flex;
+            align-items: center;
+            margin-top: 0px;
+
+            @media screen and (min-width: 850px) {
+                margin-top: 30px;
+            }
+
+            & p {
+                display: none;
+                max-width: 400px;
+                font-weight: 400;
+                font-size: 13px;
+                line-height: 22px;
+                color: rgba(255, 255, 255, 0.5);
+
+                @media screen and (min-width: 850px) {
+                    display: block;
+                }
+            }
+		}
+
+		// .form-consultation__submit
+
+		&__submit {
+            display: block;
+            width: 220px;
+            margin: 0 auto;
+            outline: solid 2px #000;
+            background: #000;
+            font-weight: 700;
+            font-size: 16px;
+            padding: 20px;
+            line-height: 20px;
+            border: none;
+            color: #fff;
+            transition: all 0.3s;
+
+            @media screen and (min-width: 850px) {
+                width: 240px;
+                margin-right: 24px;
+                margin-left: 0;
+            }
+                    
+            &:hover {
+                outline:3px solid #000;
+                outline-offset: 3px;
+            }
+        
+            &:active {
+                box-shadow: 0px 3px 8px 0px rgb(99, 99, 99) inset;
+                transition: all 0.1s;
+            }
+		}
+}
+.select {
+    position: relative;
+    margin-right: 10px;
+}
+.select-active {
+    display: flex;
+    align-items: center;
+
+    & span {
+        display: block;
+        margin-right: 6px;
+    }
+}
+
+.select-list {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    background: #fff;
+    list-style: none;
+    border-radius: 2px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(110%);
+    transition: all 0.3s;
+
+    &.active {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(100%);
+    }
+}
+.selec-item {
+    &:not(:last-child) {
+        margin-bottom: 10px;
+    }
+}
+
+}
+
